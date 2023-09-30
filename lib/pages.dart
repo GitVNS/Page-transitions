@@ -78,7 +78,7 @@ class ChildPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black.withOpacity(0.9),
       body: Center(
         child: ElevatedButton.icon(
           onPressed: () {

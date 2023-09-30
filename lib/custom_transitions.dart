@@ -6,6 +6,7 @@ class ScalePageTransition extends PageRouteBuilder {
   ScalePageTransition({
     required this.child,
   }) : super(
+            opaque: false,
             transitionDuration: const Duration(milliseconds: 300),
             pageBuilder: (context, animation, secondaryAnimation) => child);
 
@@ -32,6 +33,7 @@ class SlidePageTransition extends PageRouteBuilder {
     required this.child,
     required this.direction,
   }) : super(
+            opaque: false,
             transitionDuration: const Duration(milliseconds: 200),
             pageBuilder: (context, animation, secondaryAnimation) => child);
 
